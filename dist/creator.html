@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head>
+    <title>DuckHuntJS Level Creator</title>
+    <link rel="stylesheet" type="text/css" href="creator.css" media="screen" />
+   
+</head>
+<body>
+<h1>Hunt Project partida customizada</h1>
+<p>
+  <strong>Personalizar partida: </strong><br>
+   <br>
+</p>
+<form action="index.html">
+    <div class="form-grid">
+        <div><label for="title">Nome do nivel: </label> <input type="text" id="title" name="title"></div>
+        <div><label for="waves">Total de ondas: </label> <input type="number" id="waves" name="waves" min="1" max="100"
+                                                       placeholder="1-100" value="3" required></div>
+        <div><label for="ducks">Patos por ondas: </label> <input type="number" id="ducks" name="ducks" min="1" max="5000"
+                                                       placeholder="1-5000" value="50" required></div>
+        <div><label for="points">Ponto por patos: </label> <input type="number" id="points" name="points" min="1" max="1000"
+                                                         placeholder="1-1000" value="100" required></div>
+        <div><label for="bullets">Balas por ondas: </label> <input type="number" id="bullets" name="bullets" min="1"
+                                                           max="10000" placeholder="1-10000" value="100" required>
+        </div>
+        <div><label for="radius">Explosão da arma: </label><input type="number" id="radius" name="radius" min="30"
+                                                              max="200" placeholder="30-200" value="60"></div>
+        <div><label for="speed">Pato velocidade: </label> <input type="number" id="speed" name="speed" min="1" max="10"
+                                                       placeholder="1-10" value="6" required></div>
+        <div><label for="time">Tempo por onda: </label> <input type="number" id="time" name="time" min="10" max="120"
+                                                    placeholder="10-120" value="30"></div>
+    </div>
+    <br><br>
+    <button type="submit"><a>Gerar <br> Level!</a></button>
+</form>
+
+<br><br>
+
+</body>
+</html>
